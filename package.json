@@ -1,0 +1,12 @@
+{
+  "name": "recuperatorio",
+  "version": "1.0.0",
+  "description": "- 📅 Fecha: 05-Junio\r - 📚 Temas: Manejo de múltiples funciones, `filter`, `map`, `any`, `some`. Manejo de Express. Métodos GET y POST. Manejo de objetos en `request`.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
