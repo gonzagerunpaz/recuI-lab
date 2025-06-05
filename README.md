@@ -16,7 +16,7 @@ Desarrollar un servidor Express con un endpoint **/productos/filtrar** que filtr
     {
         "nombre": "string",
         "precio": "number",
-        "categorias": ["string1", "string2", "string3", ...],
+        "categorias": "string",
         "stock": "number"
     },
     {
@@ -25,7 +25,7 @@ Desarrollar un servidor Express con un endpoint **/productos/filtrar** que filtr
 ]
 ```
 
-Escribir en un archivo independiente de validaciones todas las funciones de filtros que pueden llegar a aplicarse. Cada función debe recibir el producto y un valor de referencia, y retornar **true** si el producto **sí** cumple la regla.
+Escribir en un archivo independiente (dentro de la carpeta filtros) de validaciones todas las funciones de filtros que pueden llegar a aplicarse. Cada función debe recibir el producto y un valor de referencia, y retornar **true** si el producto **sí** cumple la regla.
 
 Validaciones a realizar:
 
@@ -72,28 +72,28 @@ Este ejemplo de respuesta se basa en la aplicación de las funciones "stock" y "
     "id": 1,
     "nombre": "Heladera",
     "precio": 1500000,
-    "categorias": ["electrodomestico", "hogar"],
+    "categorias": "electrodomestico",
     "stock": 15
   },
   {
     "id": 2,
     "nombre": "Pelota de Fútbol",
     "precio": 25000,
-    "categorias": ["deportivo", "recreativo"],
+    "categorias": "deportivo",
     "stock": 12
   },
   {
     "id": 4,
     "nombre": "Zapatillas Running",
     "precio": 60000,
-    "categorias": ["deportivo", "calzado"],
+    "categorias": "deportivo",
     "stock": 20
   },
   {
     "id": 7,
     "nombre": "Camiseta de Fútbol",
     "precio": 30000,
-    "categorias": ["deportivo", "indumentaria"],
+    "categorias": "deportivo",
     "stock": 25
   }
 ]
@@ -103,7 +103,7 @@ Este ejemplo de respuesta se basa en la aplicación de las funciones "stock" y "
 
 🔄 **Validaciones Anidadas:**
 
-Permitir que al menos 2 funciones puedan recibir `values` como un objeto para validaciones más complejas. Ejemplo:
+1. Permitir que al menos 2 funciones puedan recibir `values` como un objeto para validaciones más complejas. Ejemplo:
 
 ```json
 {
@@ -111,3 +111,5 @@ Permitir que al menos 2 funciones puedan recibir `values` como un objeto para va
   "values": { "min": 100, "max": 1000 }
 }
 ```
+
+2. Armar y programar al menos un caso de ejemplo que utilice las funciones añadidas de la dificultad adicional.
